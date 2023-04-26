@@ -1,0 +1,57 @@
+body{
+    background-color:beige;
+}
+p{
+    color: rgb(77, 70, 62);
+    font-size: 30px;
+    font-family: "Amatic SC", cursive;
+}
+.first{
+    color: rgb(77, 70, 62);
+    font-size: 30px;
+    font-family: "Caveat", cursive;
+}
+.second{
+    font-family: "Marck Script", cursive;;
+    color:rgb(77, 70, 62);
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.third{
+    font-family: "Rubik Vinyl", cursive;
+}
+.beige-text-with-black-shadow{
+    text-shadow: -10px -20px 2px rgb(111, 100, 86), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    color: beige;
+    font: 2em "Rubik Vinyl", cursive;
+}
+.shadow{
+    text-shadow: 5px 10px;
+}
+.shadow1{
+    text-shadow: 3px -3px  rgb(89, 89, 89);
+    font-weight: 900;
+    font-family: "Rubik Wet Paint", cursive;
+    font-style: italic;
+}
+.vertical{
+    writing-mode: vertical-rl;
+  text-underline-position: left;
+  text-shadow: 0 0 10px black;
+}
+.underline{
+    text-decoration: underline overline;
+}
+.underline1{
+    text-decoration: line-through;
+}
+.text-shadow-1{
+    background: linear-gradient(-45deg, #474539, rgb(205, 144, 109));
+    color: #f4f4f4;
+    text-shadow: -1px -1px rgb(79, 77, 77), 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
+  }
+  .text-shadow-2{
+    background: rgb(109, 98, 98);
+    color: white;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
+  }

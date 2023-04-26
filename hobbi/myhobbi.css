@@ -1,0 +1,64 @@
+body{
+  background-image: url(bb.jpeg);
+}
+h1{
+text-align: center;
+font-family: "Sofia Sans Semi Condensed", sans-serif;
+font-size: 50px;
+color: rgba(251, 108, 108, 0.635);
+letter-spacing: 5px;
+text-transform: uppercase;
+text-shadow: 5px red 5px;
+padding: 20px;
+}
+li{
+  color: rgba(251, 108, 108, 0.635);
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+h2{
+  font-size: 24px;
+  color: rgba(251, 108, 108, 0.635);
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.18);
+}
+h3{
+  font-size: 22px;
+  text-indent: 15px;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  color: rgba(251, 108, 108, 0.635);
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.22);
+}
+p{
+  font-size: 20px;
+  color: rgb(202, 208, 190);
+  text-align: justify;
+  text-indent: 15px;
+  line-height: 20px;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  background-color: rgba(0, 0, 0, 0.341);
+}
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  max-width: 300px;
+  float: left;
+}
+img {
+  max-width: 300px;
+  max-height: 200px;
+  float: left;
+}
+figcaption {
+  background-color: #35462bad;
+  color: #f2d7c5;
+  font-family:"Neucha", cursive;
+
+  text-align: center;
+  font-size: 20px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function factorial(n){
+    let result = 1
+    for (let i = 1; i <= n; i++) result = result*i
+      return(result)
+    }
+    let n = +prompt("введіть число для обчислення факторіала:",0)
+    alert(factorial(n))
+    for (let i = 1; i <= n; i++) {
+      result = result*i
+    }
+    alert(`${n}`)
+    let x = prompt("x","")
+    let n = prompt("x","")
+    let result = 1
+    for(let i  = 1; i <= n; i++){
+      result=x*result
+    }
+    alert(result)
+    let userName = "DrWho"
+    function showHI(){
+      let userName = 'капітан'
+      let hi = 'привіт всім'+userName+' від функці'
+      alert("hi")
+    }
+    showHI()
+    alert(userName)
+    function max(x,y){
+      if(x > y){
+        return x
+      }else{
+        return y 
+      }
+    }
+    // let x = +prompt("число")
+    // let y = +prompt("число")
+    //   alert(max)
+    //   alert(max)
+    // function grade(n,x){
+    //   let result = x
+    //   for (let i=1; i < n; i++){
+    //     result=result*x
+    //   }
+    //   return result
+    // }
+    // let x = prompt("введіть х")
+    // let n = prompt("введіть n")
+    // if(n<=1){
+    //   alert('за умовою треба щоб n було >= 1')
+    // }else{
+    //   alert(grade(x,n))
+    // }
+    
+  </script>
+</body>
+</html>

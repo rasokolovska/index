@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // let name = "superman"
+    // alert(name.charAt(0))
+    // alert(name[5])
+    // let nameS = "SUPERMAN"
+    // let nameL = "forever"
+    // alert( nameS.toLowerCase()+" "+nameL.toUpperCase());
+    // let str = "у дворі трава на траві дрова";
+    //   alert( str.indexOf("трав") ); // 8
+    //   alert( str.indexOf("у") ); // 0, тому, що "у" зустрінеться на самому початку рядка
+    //   alert( str.indexOf("трав", 9) ); // 17, і ми знайдемо "трав" ще раз
+//     let str = "у дворі трава на траві дрова";
+// alert(str.substring(2,6) ); // «двор»
+// alert(str.substr(2,6)); // «дворі »
+// alert(str.slice(2,-6)); // «дворі трава на траві»
+// function bigOne(str){
+//   if(str.charAt(0)==0)
+//   return str = "напишіть тут"
+//   return str[0].toUpperCase() + str.slice(1)
+// }
+// let strInBigOne = prompt("введіть рядок","імя пишеться з великої літери")
+// alert(bigOne(strInBigOne) )
+// function findSpam(str) {
+// let lowCaseStr = str.toLowerCase(); 
+// return !!(~lowCaseStr.indexOf('безкоштовно') || ~lowCaseStr.indexOf('гарантія')); }
+// alert( 'Отримайте БЕЗКОШТОВНО, тільки клікнувши на посилання'+ ' перевірка на спам : ' + findSpam('Отримайте БЕЗКОШТОВНО, тільки клікнувши на посилання ') );  
+// alert('Це гарантія, що ви виграєте' + 'перевірка на спам : ' + findSpam('Це гарантія, що ви виграєте ') );
+// alert('Привіт як справи?'+ ' перевірка на спам : ' + findSpam('Привіт як справи?') );function findSpam(str) { 
+// let lowCaseStr = str.toLowerCase(); 
+// return !!(~lowCaseStr.indexOf('безкоштовно') || ~lowCaseStr.indexOf('гарантія')); } 
+// alert( 'Отримайте БЕЗКОШТОВНО, тільки клікнувши на посилання'+ ' перевірка на спам : ' + findSpam('Отримайте БЕЗКОШТОВНО, тільки клікнувши на посилання ') );  
+// alert('Це гарантія, що ви виграєте' + 'перевірка на спам : ' + findSpam('Це гарантія, що ви виграєте ') );
+// alert('Привіт як справи?'+ ' перевірка на спам : ' + findSpam('Привіт як справи?') );
+// let str = "бредуть бобри в сирі бори. бобри хоробрі, а для бобрят добрі ";
+// let target = prompt("Введіть підрядок для пошуку","ри"); // мета пошуку
+// let position = 0;
+// // Довжину рядка визначати не будемо використовуємо нескінченний цикл з перериванням break вкінці рядка
+// while (true) {
+//  let searchPos = str.indexOf(target, position);
+//  if (searchPos == -1) break; // якщо рядок закінчився
+
+//  alert('знайшли ' +target+ ' тут: '+ searchPos );
+//  position = searchPos + 1; // продовжити пошук з наступного
+// }
+//  let number  = prompt("enter number")
+//  document.write("in number "+number+""+number.length +"digits"+"<br>")
+//  for(let i=0; i<number.length;i++){
+//   document.write(number[i]+"<br>")
+//  }
+// let num  = ["null","one","two"]
+// alert(num[0])
+// alert[num[1]]
+// alert(num[2])
+// num [2] = "no two"
+// alert(num)
+// num [3] = " three"
+// alert(num)
+//let array  = []
+//array[87] = true
+//alert(array.length)
+//догіка довжини
+// let numbers = ['Нуль','Один','Два'];
+// numbers.pop(); // видалили два
+// alert(numbers);
+// numbers.push('Нове два'); // Додали нове два
+// alert(numbers);
+// numbers.shift(); // видалили нуль
+// alert(numbers);
+// numbers.unshift('Новий нуль'); // додали новий нуль
+// alert(numbers);
+// let array2D = [
+//   [1,2,3]
+//   [4,5,6]
+//   [7,8,9]
+// ]
+// let color = ["yellow","blue"];
+// alert(color)
+// color[2]="red"
+// alert(color)
+// color[color.length-2]="black"
+// alert(color)
+// color.shift()
+// alert(color)
+// color.unshift("green","orange")
+// alert(color)
+let compliments = ["funny","good person","smart","genius","cleaver","generous","pretty","kind"]
+let animal = ["ladybag","butterfly","cat","dog","duck","chicken","bear"]
+let number  = prompt("скільки ти хочеш компліментів")
+for(let i=1;i<=number;i++){
+  let animalRandom=Math.floor(Math.random()*animal.length)
+  let complimentsRandom =Math.floor(Math.random()*compliments.length)
+  document.write(i+") you are so "+ compliments[complimentsRandom] +" as "+ animal[animalRandom] +"<br>")
+}
+ //циклити поки не буде число на прикладі цієї задачі
+ //10 задач оформити для сайту
+//  human = new Object();
+// human.name = "В'ячеслав";
+// human.age = 34;
+// human.gender = 'Male';
+// human.greet =function(personName) {
+//  return this.name + ': Радий Вас бачити, ' + personName + '!'
+// }
+// // давайте перевіримо наш метод «привіт» для об'єкта «людина»
+// alert(human.greet('Катерина'));
+// alert(human.greet('Олег'));
+  </script>
+</body>
+</html>

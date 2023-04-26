@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // alert(Math.floor (5 ,4))
+    // alert(Math.ceil(5.4))
+    // alert(Math.round(5,4))
+    //let n = 15.3735
+    //alert(n.toFixed(1))
+    //alert(n.toFixed(2))
+    //alert(n.toFixed(3))
+    //alert(n.toFixed(5))
+    //округлює до точності зазначеної в дужках
+    // let x = prompt("Введіть будь-яке значення:", "");
+    // while(isNaN(x)){
+    //   x = prompt("введіть будь яке число")
+    //   }
+    //   alert("ви ввели число"+x )
+    //   let x  =  +prompt("введіть значення від 0 до 1")
+    //   let y  =  +prompt("введіть значення від 0 до 1")
+    //   if ((x>0&&x<1)&&(y>0&&y<1)){
+    //     alert((x+y).toFixed(2))
+    //   }else{
+    //     alert("вкажіть число з цього діапазону ")
+    //   }
+    //   let max = +prompt("введіть максимальне число",100)
+    //   for(i=0;i<1000;i++){
+    //   document.writeln(Math.round )(Math.random()*max)
+    // }//max number
+    // let min = +prompt("введіть максимальне число",0)
+    // let max = +prompt("введіть максимальне число",100)
+    //   for(i=0;i<1000;i++){
+    //   document.writeln(Math.round(min+Math.random()*(max-min+1)))
+    // }
+    // let min=+prompt("Введіть максимальне число",0)
+    // let max=+prompt("Введіть максимальне число",100)
+    //  Math.round(min+Math.random()*(max-min))
+    let min=+prompt("Введіть мінімальне число")
+let max=+prompt("Введіть максимальне число")
+let numX=Math.round(min+Math.random()*(max-min));
+let num;
+let count=0;
+do{
+   
+    num=prompt("Введіть число",0);
+    count++
+    if(num==null){
+        alert("До побачення!")
+    }else if(count>8){
+        alert("Ви використали свій ліміт спроб. На жаль Ви не вгадали. До побачення!")
+    }else if(+num>numX){
+        alert(`Спроба №${count}. Ваше число більше, ніж те, що потрібно`)
+    }else if(+num<numX){
+       alert(`Спроба №${count}. Ваше число менше, ніж те, що потрібно`)
+    }else if(+num==numX){
+        alert("Ви вгадали! Загадане число: "+numX+ ". Кількість спроб: "+ count)    
+    }else{
+        alert("Ви ввели не число")
+    }
+}while (num!=numX && num!=null && count<=8);
+  </script>
+</body>
+</html>

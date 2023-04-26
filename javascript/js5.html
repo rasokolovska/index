@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: bisque;
+      color: darkgreen;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // let count=0
+    // while(count < 4){
+    //   alert(count)
+    //   count++
+    // }цикл
+    // let i=4
+    // while(i){
+    //   alert(i)
+    //   i--
+      // let count=0;
+      // do {
+      // alert(count);
+      // count++;
+      // } while (count < 4);
+      // let count = 0;
+      // for (count  = 0; count < 4; count++){
+      // alert(count);
+      // }
+      // let count = 0
+      // while(count++ < 4){
+      //   alert(count)
+      // }
+      // let min =+ prompt("enter min",0)
+      // let max =+ prompt("enter max",100)
+      // let sum = 0
+      // for(count = min; count <= max; count++){
+      //   sum += count 
+      // }
+      //  document.write(`sum ${min} ${max} ${sum}`)
+      
+      // let sum = 0;
+      // while (true) {
+      // let value = +prompt('Введіть число', '');
+      // if (!value) break; 
+      // sum += value;
+      // }
+      // alert( 'Сума: ' + sum );
+     let numX = 27
+     let num
+     let count=1
+     do{
+      num = prompt("введіть число ?",0)
+      count++
+       if( num == null){
+      alert ("допобачення")
+     }else if (num>numX){
+      alert ("ваше число більше")
+     }else if(num<numX){
+      alert("ваше число менше")
+     }else if (num==numX){
+      alert("ви вгадали " + numX+" кількість спроб: "+count)
+     }else{
+      alert("ви ввели не число")
+     }
+    }while( num != numX && num!=null)
+
+  </script>
+</body>
+</html>

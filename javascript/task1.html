@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    body{
+      background-image: url(jss.webp);
+    }
+ p{
+  text-align: center;
+  font-size: 50px;
+  color: rgb(188, 188, 167);
+ }
+ .cqe{
+			width: 50px;
+			height: 50px;
+			font-size: 36px;
+			text-align: center;
+ }
+ /* .button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+} */
+  </style>
+</head>
+<body>
+  <script>
+    let min=document.qef.min.value;
+    let max=document.qef.max.value;
+    let sol = document.getElementById("qe_sol");
+    let numX=Math.round(min+Math.random()*(max-min));
+    let num;
+    let count=0;
+      do{
+        num=prompt("Введіть число",0);
+        count++
+        if(num==null){
+        alert("До побачення!")
+        }else if(count>8){
+          alert("Ви використали свій ліміт спроб. На жаль Ви не вгадали. До побачення!")
+          }else if(+num>numX){
+          alert(`Спроба №${count}. Ваше число більше, ніж те, що потрібно`)
+          }else if(+num<numX){
+          alert(`Спроба №${count}. Ваше число менше, ніж те, що потрібно`)
+          }else if(+num==numX){
+          alert("Ви вгадали! Загадане число: "+numX+ ". Кількість спроб: "+ count)    
+          }else{
+          alert("Ви ввели не число")
+          }   
+        }while (num!=numX && num!=null && count<=8);
+        sol.innerHTML = string;
+  </script>
+  <div>
+    <p>&#128373;ВГАДАЙ ЧИСЛО&#128373;</p>
+    <form name="qef" action="javascript:triangle_calculation()">
+      min <input class="cqe" name="min" type="text" value=" " size="4">
+      max <input class="cqe"  name="max" type="text" value=" " size="4">
+      <button class="button-74" role="button">вгадати</button>  
+      <button class="button-74" role="button">Button 74</button> 
+      </form>
+      Рішення: <span id="qe_sol">Введить  та натисніть "Розрахувати"</span>
+
+  </div>
+</body>
+</html>
+

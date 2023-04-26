@@ -1,0 +1,43 @@
+body{
+  background-color: rgb(244, 214, 182);
+}
+p{
+  font-size: 50px;
+  font-family: "Amatic SC", cursive;
+  color: rgb(7, 104, 20);
+  text-align: center;
+}
+table{
+  border: double 5px rgb(0, 0, 0);
+  width: 50%;
+  background: rgb(215, 157, 95);
+  border-collapse: separate;
+  margin: auto;
+}
+caption{
+  font-size: 30px;
+  font-family: "Cormorant Infant", serif;
+  color: darkolivegreen;
+  text-align: left;
+}
+tr,td{
+  border: solid 2px rgb(49, 37, 27);
+  width: 25%;
+  height: 1cm;
+  font-size: 24px;
+  font-family: "Sofia Sans Condensed", sans-serif;
+}
+th{
+  font-size: 25px;
+  font-family: "Cormorant Infant", serif;
+  color: rgb(53, 82, 53);
+}
+tr:hover{
+  background-color: rgba(2, 99, 2, 0.706) ;
+}
+td:hover{
+  background: rgba(143, 121, 87, 0.78);
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  text-align: center;
+}

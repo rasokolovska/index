@@ -1,0 +1,7 @@
+body{
+  background-color: rgba(152, 201, 160, 0.946);
+}
+.shadow{
+  font-family: "Amatic SC", cursive;
+  text-shadow: 5px 10px;
+}

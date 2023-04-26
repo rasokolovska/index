@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Tilt+Prism&display=swap" rel="stylesheet">  
+  <title>Document</title>
+</head>
+<style>
+  body{
+    background-image: url(1.webp);
+  }
+  p{
+    text-decoration: underline overline;
+    text-align: center ;
+    font-size: 40px;
+    font-family: 'Tilt Prism', cursive;
+  }
+  input{
+    border-radius: 10px;
+    text-align: center ;
+    margin-left: 40%;
+    height: 30px;
+    background-color:#ecc6c666 ;
+  }
+  .field__form__btn {
+    background-color: #ecb7b7;
+    border-color: 2px black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 40px;
+}
+.result__check__label{
+ font-size: 20px;
+ font-family: 'Aboreto', cursive;
+
+}
+</style>
+<body>
+  <p>How many compliments do you want?</p>
+  <input type="text" class="field__form__input" onkeypress='validate(event)'/>
+  <button class="field__form__btn">Ok</button>
+  <span class="result__check__label"><br>result:</span>
+
+  <script>
+    let input = document.querySelector(".field__form__input");
+    let btn = document.querySelector(".field__form__btn");
+    let result = document.querySelector(".result__check__label");
+
+    btn.onclick = function (evt) {
+    evt.preventDefault();
+    setCompliment()    
+    }
+    
+    function setCompliment() {
+    let compliments = ["funny","good person","smart","genius","cleaver","generous","pretty","kind"];
+    let animal = ["ladybag","butterfly","cat","dog","duck","chicken","bear"];
+    let number = input.value
+    let emodjiString = ["0x1F41E", "0x1F98B","0x1F63A","0x1F415","0x1F986","0x1F423","0x1F43B"];
+    let string = ""
+
+    for(let i = 1; i <= number; i++){
+      let animalRandom = Math.floor(Math.random() * animal.length)
+      let complimentsRandom = Math.floor(Math.random() * compliments.length)
+      let emoji = String.fromCodePoint(emodjiString[animalRandom])
+      string += ("<br>"+i+") you are so "+ compliments[complimentsRandom] +" as a "+ animal[animalRandom] + emoji)
+     
+    }
+    result.innerHTML = string
+    
+  }
+
+    function validate(evt) {
+      var theEvent = evt || window.event;
+
+      // Handle paste
+      if (theEvent.type === 'paste') {
+          key = event.clipboardData.getData('text/plain');
+      } else {
+      // Handle key press
+      var key = theEvent.keyCode || theEvent.which;
+          key = String.fromCharCode(key);
+      }
+      var regex = /[0-9]/;
+      if( !regex.test(key) ) {
+        theEvent.returnValue = false;
+        if(theEvent.preventDefault) theEvent.preventDefault();
+      }
+    }
+  
+    
+  </script>
+
+</body>
+</html>

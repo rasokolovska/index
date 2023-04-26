@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // let userLogin = prompt("enter your login","")
+    // if(userLogin=="user"){
+    //   let userPassword=prompt("enter your password")
+    //   if(userPassword=="JS"){
+    //     alert("welcome")
+    //   }else if(userPassword==null){
+    //     alert(" password canceled")
+    //   }else{
+    //     alert("password is wrong")
+    //   }
+    // }else if(userLogin==null){
+    //   alert("login canceled")
+    // }else{
+    //   alert("login is wrong")
+    // }
+    //let number = 101
+
+    //if(number > 100){
+      //alert("значення більше ста")
+    //}else if(number < 100){
+     // alert("значення менше 100")
+    // //}
+    let a = +prompt("введіть коефіцієнт a")
+    let b = +prompt("введіть коефіцієнт b")
+    let c = +prompt("введіть коефіцієнт c")
+    let D = b**2-4*a*c
+    let x = -b/2*a
+    let x1 = (-b+Math.sqrt(D))/2*a
+    let x2 = (-b-Math.sqrt(D))/2*a
+    if(D>0){
+      alert(`рівняння має два корені х1=${x1} x2=${x2}`)
+    }else if(D==0){
+      alert(`рівняння має один корінь х1=${x1}`)
+    }
+      else{
+        alert(`рівняння немає коренів`)
+      }
+      //квадратне рівняння
+      //let answer
+      // let inputN = +prompt("Введіть число від 1 до 50","")
+      // let questN = +prompt("Вгадайте число від 1 до 50","")
+      // if(questN > inputN){answer="Ваше число більше"}
+      // if(questN < inputN){answer="Ваше число менше"}
+      // if(questN == inputN){answer="Ви Вгадали!"}
+      // alert(answer);
+      //вгадай число
+      // let money = +prompt("яку суму хочете зняти","")
+      // if( money < 50|| money > 3000){
+      //   alert(" на жаль, ви можете зняти гроші на суму від 50грн до 3000грн.")
+      // }else{
+      //   alert(`візьміть свої кошти у суммі ${money}`)
+      // }
+      //BANCOMAT
+      
+    //  let age = +prompt("Введіть свій вік","")
+    //   if(age < 18 || years > 100){
+    //     alert("нажаль сайт забороненно відвідувати")
+    //   }else{
+    //     alert(`ось ваш доступ ${age} `)
+    //   }
+    let a=+prompt("Довжина першої сторони трикутника")
+    let b=+prompt("Довжина другої сторони трикутника")
+    let c=+prompt("Довжина третьої сторони трикутника")
+    
+    let p=(a+b+c)/2
+    let S=Math.sqrt(p*(p-a)*(p-b)*(p-c))
+    document.write("Площа трикутника дорівнює "+S+"<br>")
+    let P=a+b+c
+    document.write("Периметр трикутника дорівнює "+P)
+    
+
+  </script>
+</body>
+</html>
